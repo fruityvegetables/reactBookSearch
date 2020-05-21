@@ -1,0 +1,30 @@
+.add-issuer-wrapper {
+    padding: 2rem 2rem 0 2rem;
+    
+    .add-issuer {
+        margin-right: 0.1rem;
+        width: 100%;
+    }
+
+    #simple-dialog-title {
+        padding-left: 0.5rem;
+    }
+
+    .MuiFormControl-root {
+        width: 100%;
+    }
+
+    .MuiSelect-select.MuiSelect-select {
+        padding-right: 16rem;
+    }
+
+    .MuiIconButton-root {
+        padding: 0;
+    }
+
+    .select-p {
+        margin-bottom: -0.7rem !important;
+        margin-top: 1rem !important;
+        margin-left: 1.7rem !important;
+    }
+}

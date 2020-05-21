@@ -1,12 +1,26 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+const rootEl = document.getElementById('app-site');
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// Create a reusable render method that we can call more than once
+let render = () => {
+  // Dynamically import our main App component, and render it
+  const MainApp = require('./MainApp').default;
+  ReactDOM.render(
+    <MainApp/>,
+    rootEl
+  );
+};
+
+if (module.hot) {
+  module.hot.accept('./MainApp', () => {
+    const MainApp = require('./MainApp').default;
+    render(
+      <MainApp/>,
+      rootEl
+    );
+  });
+}
+
+render();

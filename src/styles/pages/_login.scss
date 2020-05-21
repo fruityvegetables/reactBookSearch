@@ -1,0 +1,195 @@
+/*Login Styles*/
+/*Login Styles*/
+@font-face {
+  font-family: UBA-Font;
+  src: url("https://fonts.googleapis.com/css?family=Encode+Sans:400,600,800&display=swap");
+}
+
+.login-container {
+  position: relative;
+  height: 100%;
+}
+
+.login-content {
+  width: 420px;
+  margin: auto;
+  padding: 35px 35px 20px;
+  background-color: $white;
+  @include box-shadow($shadow);
+  @include border-radius(4px);
+  font-size: 14px;
+  max-width: 94%;
+}
+
+.login-header {
+  margin-bottom: 30px;
+}
+
+.login-content .form-control {
+  background-color: map_get($gray, lighten-4);
+
+  &:focus {
+    box-shadow: none;
+    // border-color: $app-primary;
+    border-color:#D70900!important;
+  }
+}
+
+.login-content .btn, .login-content .jr-btn {
+  padding: 10px 35px !important;
+}
+
+.app-login-container {
+  position: relative;
+  max-width: 680px;
+  width: 94%;
+  margin: 0 auto;
+
+  & .loader-view {
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 5%;
+    bottom: 0;
+    z-index: 2;
+    color:red;
+  }
+
+}
+
+.app-login-main-content {
+  @include display-flex();
+  background-color: $white;
+  @include box-shadow($shadow);
+  @include border-radius(10px);
+  font-size: 14px;
+  overflow: hidden;
+}
+
+.app-login-content {
+  padding: 35px 35px 20px;
+  width: 60%;
+  order: 1;
+
+  @media screen and (max-width: 575px) {
+    width: 100%;
+    order: 2;
+  }
+}
+
+.app-login-header {
+  margin-bottom: 30px;
+}
+
+.app-login-content .form-control {
+  background-color: map_get($gray, lighten-4);
+
+  &:focus {
+    box-shadow: none;
+    // border-color: $app-primary;
+    border-color:#D70900!important;
+  }
+}
+
+.app-login-content .btn, .login-content .jr-btn {
+  padding: 10px 35px !important;
+}
+
+.app-logo-content {
+  background-image:url("../../assets/images/seedsFly.jpg"); 
+	background-repeat:no-repeat; 
+	background-position:center; 
+	background-size:cover; 
+  // background-color: $app-primary;
+  background-color: #464851;
+  padding: 35px 35px 20px;
+  width: 40%;
+  order: 2;
+
+  @media screen and (max-width: 575px) {
+    width: 100%;
+    order: 1;
+  }
+  
+}
+
+
+.app-social-block {
+  @include display-flex();
+  @include align-items(center);
+  @include justify-content(space-between);
+
+  & .social-link,
+  & .social-link li {
+    margin: 0;
+  }
+
+  & .social-link button {
+    // border: solid 1px $app-primary;
+    border: solid 1px #D70900;
+    @include border-radius(50%);
+    // color: $app-primary;
+    color: #D70900;
+    padding: 0;
+
+    &:hover,
+    &:focus {
+      color: $white;
+      // background-color: $app-primary;
+      background-color: #D70900;
+    }
+  }
+
+  & p {
+    margin-bottom: 0;
+  }
+}
+
+// Marine Additions
+.marineLoginHead{
+  color:#464851;
+  font-size:1.8em;
+}
+.marineAlertdanger{
+  color:red;
+  font-size:0.8em;
+  margin-top:-10px;
+}
+
+.marineButton{
+  color:#fff!important;
+  background-color: #D70900!important;
+ 
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .marineAlertdanger{
+    font-size:0.7em;
+    margin-top:-2px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  .marineAlertdanger{
+    font-size:0.7em;
+    margin-top:-2px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+  .marineAlertdanger{
+    font-size:0.7em;
+    margin-top:-2px;
+  }
+}
+
+
+@media screen and (max-width: 575px) {
+  .marineAlertdanger{
+    font-size:0.7em;
+    margin-top:-2px;
+  }
+}

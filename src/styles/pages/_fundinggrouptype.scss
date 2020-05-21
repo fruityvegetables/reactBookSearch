@@ -1,0 +1,193 @@
+
+// Funding Group Types Styles
+  
+@font-face {
+  font-family: UBA-Font;
+  src: url("https://fonts.googleapis.com/css?family=Encode+Sans:400,600,800&display=swap");
+}
+
+.loader-fgt {
+    margin-top: 6rem;
+  }
+  
+.fundGroupHeader {
+  color:#1b7ced;
+  font-size:24px!important;
+}
+
+.fundGroupHeaderDanger {
+  color:red;
+  font-weight: 400 !important;
+  color: red;
+}
+
+.quesTextFund {
+  color:#777;
+  font-weight:500;
+  font-size:15px;
+  
+}
+
+.ansTextFund {
+  color:#1b7ced;
+  padding-left:3px;
+  font-size:15px;
+ 
+}
+
+.topFundMargin {
+  margin-top:-11px;
+}
+
+.iconSize {
+  font-size:20px;
+  color:#1b7ced;
+}
+.iconSizeBig{
+  font-size:30px;
+  color:#1b7ced;  
+}
+
+.cardBodyStyle{
+border:solid #ddd 1px;
+border-radius:5px;
+}
+.fundsCardStyle{
+ max-height:600px!important;
+}
+.txtYes{
+  color:#009688!important;
+  font-size:18px!important;
+}
+.txtNo{
+  color:#777!important;
+  font-size:18px!important;
+}
+
+.crowdFundSubHeader{
+  font-size:20px;
+  font-weight:500;
+}
+.marineGrey{
+  background-color: #666!important;
+  font-weight:bold;
+ }
+
+.marineBlue {
+ background-color: #1b7ced!important;
+ font-weight:bold;
+}
+
+.marineRed {
+  background-color: #ed1500!important;
+  font-weight:bold;
+ }
+
+.marineGrey, .marineBlue, .marineRed {
+  width:25%!important;
+  font-size:14px!important;
+}
+.btnWidth{
+  // width:15%!important;
+  // height:35px;
+}
+.fgt-get-wrapper {
+  margin: 2rem auto;    
+  width: 95%;
+  display: inline-block;
+}
+
+.create-fgt-wrapper {
+    margin: 2rem auto;
+    width: 95%;
+}
+
+.fgt-radio {
+    margin-top: 1rem !important;
+}
+
+.fgt-radio-error {
+    margin-top: 1.1rem;
+}
+
+.fgt-loader {
+    margin-top: 1rem;
+    width: 2rem;
+}
+
+.fgt-textarea {
+    margin-top: 1rem;
+}
+
+.fgt-textarea label {
+    color: rgba(0, 0, 0, 0.54);
+    padding: 0;
+    font-size: 1rem;
+    font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 0.00938em;
+    margin-bottom: 10px;
+}
+
+.fgt-textarea textarea {
+    width: 100%;
+    border-radius: 4px;
+}
+
+.fgt-textarea textarea:focus {
+    outline: none;
+}
+
+.fgt-button {
+    height: 48px;
+}
+
+.MuiFormControlLabel-labelPlacementStart {
+    margin-left: 1px !important;
+    margin-top: 10px;
+}
+
+.bg-indigo.lighten-1 {
+    margin-top: 18px !important;
+    margin-left: 15px !important;
+}
+
+.fgt-form {
+    margin-bottom: 14px !important;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.fgt-error {
+    margin-top: 0;
+}
+
+@media (min-width: 768px) {
+    .col-md-4 {
+        flex: 0 0 33.33333%; 
+        max-width: 33.33333%;
+    }
+}
+
+.fundGroupForm01{
+  margin: 0 auto;
+  width:85%;
+  border: solid 1px #ddd;
+  padding:20px;
+  border-radius:5px;
+}
+
+.txtAreaPad{
+  margin-top:35px;
+}
+
+// .delete-confirm-loader {
+//   width: 20px;
+//   height: 20px;
+// }
+
+.MuiCircularProgress-root MuiCircularProgress-colorPrimary MuiCircularProgress-indeterminate {
+  width: 20px !important;
+  height: 20px !important;
+}
