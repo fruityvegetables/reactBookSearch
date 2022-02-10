@@ -54,7 +54,7 @@
     "material-ui-pickers": "^2.2.4",
     "moment": "^2.26.0",
     "moxios": "^0.4.0",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "nprogress": "^0.2.0",
     "path": "^0.12.7",
     "prettier": "^1.19.1",
